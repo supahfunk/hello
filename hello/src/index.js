@@ -1,5 +1,11 @@
 class Hello {
   constructor(text) {
-    window.console.log(`Hello ${text}`)
+    this.text = text
+  }
+
+  init() {
+    window.console.log('text ---->', this.text)
   }
 }
+
+window.Hello = Hello
